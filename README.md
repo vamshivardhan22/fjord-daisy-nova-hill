@@ -33,17 +33,17 @@ npm run dev
 
 Use the local URL printed by the development server.
 
-## Tests and build
+## Verification
 
-Use the scripts defined in `package.json`. In a standard npm setup:
+The repository defines scripts for automated tests, TypeScript checks, and a production build.
 
 ```bash
 npm test
+npm run typecheck
 npm run build
 ```
 
-If a script is not defined in the current checkout, use the equivalent command configured by the project.
-
+The build command also runs the database migration script. Configure the required environment and database settings for the intended run mode before building.
 ## Important notes
 
 This is a demonstration of a qualification flow, not a lending decision engine. Rules and wording should be confirmed against the applicable business policy before use with real customers. Do not enter real customer or financial data into an unapproved demo environment.
